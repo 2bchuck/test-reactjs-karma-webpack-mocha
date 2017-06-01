@@ -22,3 +22,4 @@ npm run test_watch
 참고: 
 - [Karma-Webpack](https://webpack.github.io/docs/usage-with-karma.html#webpackmiddleware)
 - [Hot Module Replacement - React](https://webpack.js.org/guides/hmr-react/#babel-config)
+- [Using Enzyme with Webpack](http://airbnb.io/enzyme/docs/guides/webpack.html)

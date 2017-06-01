@@ -29,6 +29,12 @@ module.exports = {
         // necessary for HMR to know where to load the hot update chunks
     },
 
+    externals: {
+        'react/addons': true,
+        'react/lib/ExecutionEnvironment': true,
+        'react/lib/ReactContext': true
+    },
+
     devtool: 'inline-source-map',
 
     devServer: {

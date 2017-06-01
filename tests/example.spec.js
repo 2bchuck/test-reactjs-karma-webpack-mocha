@@ -1,4 +1,8 @@
-import chai from 'chai';
+import React from 'react';
+import { shallow, mount, render } from 'enzyme';
+import App from '../src/comps/App';
+
+const wrapper = shallow(<App />);
 
 let expect = chai.expect,
     assert = chai.assert,
@@ -17,5 +21,15 @@ describe('Setup karma tests with chai', () => {
 
     it('should expose the Chai should property', () => {
         foo.should.be.a('number');
+    });
+});
+
+describe('App', () => {
+    it('renders without problems', () => {
+        expect(wrapper).to.exist;
+    });
+
+    it('should say like this', () => {
+        expect(wrapper.childAt(0).text()).to.equal('Hello! React in ES6!');
     });
 });
